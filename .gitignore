@@ -1,0 +1,7 @@
+/*.cfg
+/*.iso
+/EFI/
+/grub/fonts
+/grub/grubenv
+/grub/locale
+/grub/x86_64-efi
