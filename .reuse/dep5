@@ -1,0 +1,12 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: distributio
+Upstream-Contact: Keith Maxwell <keith.maxwell@gmail.com>
+Source: https://github.com/maxwell-k/distributio
+
+Files: .gitignore
+Copyright: 2019 Keith Maxwell <keith.maxwell@gmail.com>
+License: Apache-2.0
+
+Files: *.sha256
+Copyright: No copyright holder
+License: CC0-1.0

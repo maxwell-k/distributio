@@ -1,5 +1,9 @@
 #!/bin/sh
-# "Debian 10 amd64 standard nonfree"
+# Copyright 2019 Keith Maxwell <keith.maxwell@gmail.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# debian-live-10.1.0-amd64-standard+nonfree.sh
 dir=http://cdimage.debian.org/cdimage/unofficial/non-free
 dir=$dir/cd-including-firmware/10.1.0-live+nonfree/amd64/iso-hybrid/
 get_checksum() { wget -O- ${dir}SHA256SUMS | grep "$1"; }

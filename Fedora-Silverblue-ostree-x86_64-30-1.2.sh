@@ -1,5 +1,9 @@
 #!/bin/sh
-# Fedora Silverblue 30 x86_64
+# Copyright 2019 Keith Maxwell <keith.maxwell@gmail.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# Fedora-Silverblue-ostree-x86_64-30-1.2.sh
 dir=https://download.fedoraproject.org/pub/fedora/linux/releases/30/Silverblue/
 dir=$dir/x86_64/iso/
 get_checksum() {

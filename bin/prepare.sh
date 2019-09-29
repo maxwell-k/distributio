@@ -1,4 +1,9 @@
 #!/bin/sh
+# Copyright 2019 Keith Maxwell <keith.maxwell@gmail.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# bin/prepare.sh
 checksum=true
 if [ "--no-checksum" = "$1" ] ; then
 	checksum=false

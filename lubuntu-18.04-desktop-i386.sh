@@ -1,5 +1,9 @@
 #!/bin/sh
-# "lubuntu 18.04 i386":
+# Copyright 2019 Keith Maxwell <keith.maxwell@gmail.com>
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+# lubuntu-18.04-desktop-i386.sh
 dir=http://cdimage.ubuntu.com/lubuntu/releases/18.04/release/
 get_checksum() { wget -O- ${dir}SHA256SUMS | grep "$1"; }
 grub_cfg() {

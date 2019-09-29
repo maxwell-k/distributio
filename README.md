@@ -1,4 +1,14 @@
+<!--
+Copyright 2019 Keith Maxwell <keith.maxwell@gmail.com>
+
+SPDX-License-Identifier: CC-BY-SA-4.0
+
+README.md
+-->
+
 # Distributio
+
+[![](https://reuse.software/badge/reuse-compliant.svg)](https://reuse.software/)
 
 Boot certain Linux distributions from ISOs in ten steps:
 
