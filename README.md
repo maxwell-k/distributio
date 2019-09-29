@@ -3,6 +3,9 @@
 Boot certain Linux distributions from ISOs in ten steps:
 
 1. Debian Live 10 amd64 standard non-free
+2. Debian Live 10 amd64 gnome non-free
+3. Fedora Silverblue x86_64 30 installation image
+4. Lubuntu 18.04 desktop i386
 
 The Debian distributions selected above include non-free firmware, for devices
 including WiFi adapters. Distribution 1 does not include a desktop environment.
