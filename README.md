@@ -12,9 +12,9 @@ README.md
 
 Boot certain Linux distributions from ISOs in ten steps:
 
-1. Debian Live 10 amd64 standard non-free
-2. Debian Live 10 amd64 gnome non-free
-3. Fedora Silverblue x86_64 30 installation image
+1. Debian Live 10 amd64 gnome non-free
+2. Debian Live 10 amd64 standard non-free
+3. Fedora Silverblue x86_64 31 installation image
 4. Lubuntu 18.04 desktop i386
 
 The Debian distributions selected above include non-free firmware, for devices
@@ -65,7 +65,7 @@ _These steps have been tested from distribution 1 above._
 5. Install `grub` and `mkfs.vfat`:
    ```sh
    sudo apt update &&
-   sudo apt install --yes grub-efi-amd64-bin dosfstools
+   sudo apt install --yes curl dosfstools grub-efi-amd64-bin
    ```
 6. Format and mount the disk:
    ```sh
@@ -80,12 +80,12 @@ _These steps have been tested from distribution 1 above._
    ```
 8. Download these files:
    ```sh
-   wget -O- https://github.com/maxwell-k/distributio/archive/master.tar.gz |
+   curl -L https://github.com/maxwell-k/distributio/archive/master.tar.gz |
    sudo tar xz --strip-components=1
    ```
 9. Download and check an ISO then generate grub configuration:
    ```sh
-   sudo sh bin/prepare.sh debian-live-10.1.0-amd64-standard+nonfree.sh
+   sudo sh bin/prepare.sh debian-live-10.1.0-amd64-gnome+nonfree.sh
    ```
 10. Reboot.
 

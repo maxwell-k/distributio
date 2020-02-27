@@ -6,7 +6,7 @@
 # debian-live-10.1.0-amd64-standard+nonfree.sh
 dir=http://cdimage.debian.org/cdimage/unofficial/non-free
 dir=$dir/cd-including-firmware/10.1.0-live+nonfree/amd64/iso-hybrid/
-get_checksum() { wget -O- ${dir}SHA256SUMS | grep "$1"; }
+get_checksum() { curl -L ${dir}SHA256SUMS | grep "$1"; }
 grub_cfg() {
 	printf 'menuentry %s {\n' "$1"
 	# shellcheck disable=SC2016

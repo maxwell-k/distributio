@@ -5,7 +5,7 @@
 #
 # lubuntu-18.04-desktop-i386.sh
 dir=http://cdimage.ubuntu.com/lubuntu/releases/18.04/release/
-get_checksum() { wget -O- ${dir}SHA256SUMS | grep "$1"; }
+get_checksum() { curl -L ${dir}SHA256SUMS | grep "$1"; }
 grub_cfg() {
 	printf 'menuentry %s {\n' "$1"
 	# shellcheck disable=SC2016
