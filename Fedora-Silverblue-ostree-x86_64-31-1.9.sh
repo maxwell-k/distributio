@@ -4,8 +4,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 # Fedora-Silverblue-ostree-x86_64-31-1.9.sh
-dir=https://download.fedoraproject.org/pub/fedora/linux/releases/31/Silverblue/
-dir=${dir}x86_64/iso
+dir=https://download.fedoraproject.org/pub/fedora/linux/releases/31/Silverblue
+dir=$dir/x86_64/iso
 get_checksum() {
 	curl -L $dir/Fedora-Silverblue-31-1.9-x86_64-CHECKSUM | \
 	sed -n 's/SHA256 (\(.*\)) = \(.*\)/\2  \1/p'
