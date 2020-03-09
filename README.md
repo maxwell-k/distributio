@@ -85,9 +85,23 @@ _These steps have been tested from distribution 1 above._
    ```
 9. Download and check an ISO then generate grub configuration:
    ```sh
-   sudo sh bin/prepare.sh debian-live-10.1.0-amd64-gnome+nonfree.sh
+   sudo sh bin/prepare.sh debian-live-10.?.?-amd64-gnome+nonfree.sh
    ```
 10. Reboot.
+
+## Testing
+
+To test manually, the following should succeed:
+
+```sh
+rm *.sha256 *.iso
+sh bin/prepare.sh debian-live-10.?.?-amd64-gnome+nonfree.sh
+sh bin/prepare.sh debian-live-10.?.?-amd64-standard+nonfree.sh
+sh bin/prepare.sh Fedora-Silverblue-ostree-x86_64-31-1.9.sh
+sh bin/prepare.sh lubuntu-18.04-desktop-i386.sh
+```
+
+Booting into each distribution should also be tested.
 
 ## References
 
