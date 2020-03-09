@@ -3,5 +3,5 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 #
-# debian-live-10.1.0-amd64-gnome+nonfree.sh
-. ./debian-live-10.1.0-amd64-standard+nonfree.sh
+# debian-live-10.3.0-amd64-gnome+nonfree.sh
+. ./debian-live-10.3.0-amd64-standard+nonfree.sh
